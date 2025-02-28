@@ -8,14 +8,31 @@ import Layout from '../layouts/Layout.astro';
 
 <html>
 	<!-- <Welcome /> -->
-
+  
 	<h1>Team Symphony</h1>
 
 	<p>Lorem ipsum dolor sit amet.</p>
 
 	<p>Lorem ipsum dolor sit amet.</p>
 
+  <div class="overlay"></div>
+
 	<style>
+    .overlay {
+      /* So it covers the whole screen */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      /* Apply the blur effect to everything behind the overlay */
+      backdrop-filter: brightness(50%) blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      /* Use a mask to create a transparent circular hole in the center */
+      mask-image: radial-gradient(circle at center, transparent 80px, black 100px);
+      -webkit-mask-image: radial-gradient(circle at center, transparent 80px, black 100px);
+      z-index: -999; /* Just in case lol */
+    }
 		body {
       margin: 0;
       height: 100vh;
@@ -26,8 +43,7 @@ import Layout from '../layouts/Layout.astro';
         from 0deg at 50% 50%,
         #ef233c 0deg,
         #ef233c 57.6deg,
-        #fc7531 57.6deg,
-        #fc7531 57.6deg,
+        #fc7531 58deg,
         #fc7531 118.8deg,
         #fcc331 118.8deg,
         #fcc331 180deg,
@@ -36,10 +52,8 @@ import Layout from '../layouts/Layout.astro';
         #3f48cc 237.6deg,
         #3f48cc 298.8deg,
         #6f1798 298.8deg,
-        #6f1798 360deg,
         #6f1798 360deg
       );
     }
 	</style>
-
 </html>
