@@ -15,10 +15,11 @@ import Layout from '../layouts/Layout.astro';
 
 	<p>Lorem ipsum dolor sit amet.</p>
 
-  <div class="overlay"></div>
+  <div id="background-overlay"></div>
+  <div id="background"></div>
 
 	<style>
-    .overlay {
+    #background-overlay {
       /* So it covers the whole screen */
       position: fixed;
       top: 0;
@@ -33,11 +34,14 @@ import Layout from '../layouts/Layout.astro';
       -webkit-mask-image: radial-gradient(circle at center, transparent 80px, black 100px);
       z-index: -999; /* Just in case lol */
     }
-		body {
+		#background {
       /* Background */
-      display: flex;
-      height: 100vh;
-      margin: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1000;
       background: conic-gradient(
         from 0deg at 50% 50%,
         #ef233c 0deg,
