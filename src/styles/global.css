@@ -1,0 +1,23 @@
+.homescreen body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: conic-gradient(
+        from 0deg at 50% 50%,
+        #ef233c 0deg,
+        #ef233c 57.6deg,
+        #fc7531 57.6deg,
+        #fc7531 118.8deg,
+        #fcc331 118.8deg,
+        #fcc331 180deg,
+        #2cc04a 180deg,
+        #2cc04a 237.6deg,
+        #3f48cc 237.6deg,
+        #3f48cc 298.8deg,
+        #6f1798 298.8deg,
+        #6f1798 360deg,
+        #6f1798 360deg
+    );
+}
