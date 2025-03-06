@@ -9,16 +9,43 @@ import Layout from '../layouts/Layout.astro';
 <html>
 	<!-- <Welcome /> -->
   
-	<h1>Team Symphony</h1>
-
-	<p>Lorem ipsum dolor sit amet.</p>
-
-	<p>Lorem ipsum dolor sit amet.</p>
+  <h1 id="title">Team Symphony</h1>
+  <div>
+    <div id="startpage-center">
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p style="font-weight: bold;">&lt;3</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+  </div>
 
   <div id="background-overlay"></div>
   <div id="background"></div>
 
+
+
 	<style>
+    #title{
+      color: white;
+      text-align: center;
+    }
+    #startpage-center{
+      /* CSS Devs centering a div: */
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      text-align: center;
+      
+      color:white;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 10px;
+      grid-row-gap: 0px; 
+    }
+    
     #background-overlay {
       /* So it covers the whole screen */
       position: fixed;
