@@ -1,24 +1,19 @@
 ---
-import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <html>
   <!-- <Welcome /> -->
 
   <h1 class="text-white text-center text-4xl font-bold mt-6">Team Symphony</h1>
-  <div class="">
-    <div
-      class="text-white transform-[translateY(-50%)] grid grid-cols-3 text-center align-middle absolute w-full top-1/2"
-    >
-      <p>Lorem ipsum dolor sit amet.</p>
-      <p style="font-weight: bold;">&lt;3</p>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </div>
+
+  <div
+    class="text-white transform-[translateY(-50%)] grid grid-cols-3 text-center align-middle absolute w-full top-1/2"
+  >
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p style="font-weight: bold;">&lt;3</p>
+    <p>Lorem ipsum dolor sit amet.</p>
   </div>
 
   <div id="background-overlay"></div>
@@ -73,5 +68,6 @@ import "../styles/global.css";
       );
     }
   </style>
+
 
 </html>
