@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import HeartIcon from "../assets/heart.svg";
 import "../styles/global.css";
 ---
 
@@ -12,7 +13,11 @@ import "../styles/global.css";
     class="text-white transform-[translateY(-50%)] grid grid-cols-3 text-center align-middle absolute w-full top-1/2"
   >
     <p>Lorem ipsum dolor sit amet.</p>
-    <p style="font-weight: bold;">&lt;3</p>
+    <HeartIcon
+      size={150}
+      class:list={"absolute w-full top-1/2 transform-[translateY(-50%)]"}
+    />
+    <p></p>
     <p>Lorem ipsum dolor sit amet.</p>
   </div>
 
