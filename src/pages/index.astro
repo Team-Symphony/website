@@ -5,87 +5,82 @@ import "../styles/global.css";
 ---
 
 <html>
-  <!-- <Welcome /> -->
+  <body class="grid min-h-screen grid-cols-3 grid-rows-3">
+    <!-- Title -->
+    <div class="col-span-3 row-start-1 flex items-center justify-center">
+      <h1 class="text-4xl font-bold text-white">Team Symphony</h1>
+    </div>
 
-  <h1 class="mt-6 text-center text-4xl font-bold text-white">Team Symphony</h1>
+    <!-- Text and heart -->
+    <div class="row-start-2 flex items-center justify-center">
+      <p class="text-center text-white">Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="row-start-2 flex items-center justify-center">
+      <HeartIcon size={150} />
+    </div>
+    <div class="row-start-2 flex items-center justify-center">
+      <p class="text-center text-white">Lorem ipsum dolor sit amet.</p>
+    </div>
 
-  <div
-    class="absolute top-1/2 grid w-full transform-[translateY(-50%)] grid-cols-3 text-center align-middle text-white"
-  >
-    <p>Lorem ipsum dolor sit amet.</p>
-    <HeartIcon
-      size={150}
-      class:list={"absolute top-1/2 w-full transform-[translateY(-50%)]"}
-    />
-    <p></p>
-    <p>Lorem ipsum dolor sit amet.</p>
-  </div>
-
-  <div id="background-overlay"></div>
-  <div id="please-work"></div>
-  <div id="background"></div>
-
-  <style>
-    #background-overlay {
-      /* So it covers the whole screen */
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      /* Apply the blur effect to everything behind the overlay */
-      backdrop-filter: brightness(50%) blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      /* Use a mask to create a transparent circular hole in the center */
-      mask-image: radial-gradient(
-        circle at center,
-        transparent 80px,
-        black 100px
-      );
-      -webkit-mask-image: radial-gradient(
-        circle at center,
-        transparent 80px,
-        black 100px
-      );
-      z-index: -98; /* Just in case lol */
-    }
-    #please-work {
-      /* So it covers the whole screen */
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      /* Apply the blur effect to everything behind the overlay */
-      backdrop-filter: blur(1px);
-      -webkit-backdrop-filter: blur(1px);
-      z-index: -99; /* Just in case lol */
-    }
-    #background {
-      /* Background */
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -100;
-      background: conic-gradient(
-        from 0deg at 50% 50%,
-        #ef233c 1deg,
-        #ef233c 60deg,
-        #fc7531 60deg,
-        #fc7531 120deg,
-        #fcc331 120deg,
-        #fcc331 180deg,
-        #2cc04a 180deg,
-        #2cc04a 240deg,
-        #3f48cc 240deg,
-        #3f48cc 300deg,
-        #6f1798 300deg,
-        #6f1798 360deg
-      );
-    }
-  </style>
-
-
+    <!-- Background -->
+    <div id="background-overlay"></div>
+    <div id="please-work"></div>
+    <div id="background"></div>
+  </body>
 </html>
+
+<style>
+  #background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(50%) blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    mask-image: radial-gradient(
+      circle at center,
+      transparent 80px,
+      black 100px
+    );
+    -webkit-mask-image: radial-gradient(
+      circle at center,
+      transparent 80px,
+      black 100px
+    );
+    z-index: -98;
+  }
+  #please-work {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    z-index: -99;
+  }
+  #background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    background: conic-gradient(
+      from 0deg at 50% 50%,
+      #ef233c 1deg,
+      #ef233c 60deg,
+      #fc7531 60deg,
+      #fc7531 120deg,
+      #fcc331 120deg,
+      #fcc331 180deg,
+      #2cc04a 180deg,
+      #2cc04a 240deg,
+      #3f48cc 240deg,
+      #3f48cc 300deg,
+      #6f1798 300deg,
+      #6f1798 360deg
+    );
+  }
+</style>
