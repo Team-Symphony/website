@@ -1,11 +1,11 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 import HeartIcon from "../assets/heart.svg";
 import "../styles/global.css";
 ---
 
-<html>
-  <body class="grid min-h-screen grid-cols-3 grid-rows-3">
+<BaseLayout>
+  <div class="grid min-h-screen grid-cols-3 grid-rows-3">
     <!-- Title -->
     <div class="col-span-3 row-start-1 flex items-center justify-center">
       <h1 class="text-4xl font-bold text-white">Team Symphony</h1>
@@ -26,8 +26,8 @@ import "../styles/global.css";
     <div id="background-overlay"></div>
     <div id="please-work"></div>
     <div id="background"></div>
-  </body>
-</html>
+  </div>
+</BaseLayout>
 
 <style>
   #background-overlay {
