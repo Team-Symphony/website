@@ -31,21 +31,17 @@ import GithubIcon from "simple-icons-astro/Github";
 
     <!-- Socials dock -->
     <div
-      class="col-start-2 row-start-3 flex h-fit w-fit items-center justify-center justify-self-center bg-black p-3 text-center"
+      class="col-start-2 row-start-3 flex h-fit w-fit items-center justify-center justify-self-center rounded-4xl bg-black/70 p-3 text-center"
     >
-      <div
-        class="m-1 bg-gray-600 p-2 text-white hover:bg-white hover:text-[#00AF5C]"
-      >
-        <ModrinthIcon />
+      <div class="m-1 rounded-2xl bg-black p-2">
+        <ModrinthIcon class="text-white transition hover:text-[#00AF5C]" />
       </div>
       <div
-        class="m-1 bg-gray-600 p-2 text-white hover:bg-white hover:text-[#5865F2]"
+        class="m-1 rounded-2xl bg-black p-2 text-white transition hover:text-[#5865F2]"
       >
         <DiscordIcon />
       </div>
-      <div
-        class="m-1 bg-gray-600 p-2 text-white hover:bg-white hover:text-[#181717]"
-      >
+      <div class="m-1 rounded-2xl bg-black p-2 text-white transition">
         <GithubIcon />
       </div>
     </div>
