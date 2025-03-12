@@ -2,6 +2,13 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HeartIcon from "../assets/heart.svg";
 import "../styles/global.css";
+// To import simple-icons-astro go to this site:
+// https://simple-icons-astro.dzeio.com/
+// and put the name for the icon shown there after "simple-icons-astro/"
+// Be careful with autocomplete! It will betray you and import ALL ICONS which will make the page reaaaaaaally slow so don't use that plz thx
+import ModrinthIcon from "simple-icons-astro/Modrinth";
+import DiscordIcon from "simple-icons-astro/Discord";
+import GithubIcon from "simple-icons-astro/Github";
 ---
 
 <BaseLayout>
@@ -20,6 +27,27 @@ import "../styles/global.css";
     </div>
     <div class="row-start-2 flex items-center justify-center">
       <p class="text-center text-white">Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <!-- Socials dock -->
+    <div
+      class="col-start-2 row-start-3 flex h-fit w-fit items-center justify-center bg-black p-3 text-center"
+    >
+      <div
+        class="m-1 bg-gray-600 p-2 text-white hover:bg-white hover:text-[#00AF5C]"
+      >
+        <ModrinthIcon />
+      </div>
+      <div
+        class="m-1 bg-gray-600 p-2 text-white hover:bg-white hover:text-[#5865F2]"
+      >
+        <DiscordIcon />
+      </div>
+      <div
+        class="m-1 bg-gray-600 p-2 text-white hover:bg-white hover:text-[#181717]"
+      >
+        <GithubIcon />
+      </div>
     </div>
 
     <!-- Background -->
